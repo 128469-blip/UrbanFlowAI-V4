@@ -210,7 +210,7 @@ function AnalysisState({ onNext }: { onNext: () => void }) {
         {/* Analysis Map */}
         <GlassCard className="md:col-span-2 relative overflow-hidden min-h-[300px] p-0 border-urban-cyan/30">
           <img 
-            src="/upf-traffic.jpg" 
+            src="./upf-traffic.jpg" 
             alt="Traffic Analysis UPF" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -302,7 +302,7 @@ function ResultState({ onReset }: { onReset: () => void }) {
           </div>
           <div className="relative overflow-hidden aspect-video">
             <img 
-              src="/upf-traffic.jpg" 
+              src="./upf-traffic.jpg" 
               alt="Before UPF" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -326,7 +326,7 @@ function ResultState({ onReset }: { onReset: () => void }) {
           </div>
           <div className="relative overflow-hidden aspect-video">
             <img 
-              src="/upf-solution.jpg" 
+              src="./upf-solution.jpg" 
               alt="After UPF" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
