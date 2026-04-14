@@ -51,7 +51,7 @@ export function Logo() {
     <div className="flex items-center gap-3">
       <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 overflow-hidden">
         {/* Usando um placeholder. Para usar a imagem real, faça o upload dela para a pasta public/ como logo.png e mude o src para "/logo.png" */}
-        <img src="/logo.png" alt="UrbanFlow AI Logo" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = 'https://placehold.co/100x100/05070A/00F2FF?text=UF' }} />
+        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="UrbanFlow AI Logo" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = 'https://placehold.co/100x100/05070A/00F2FF?text=UF' }} />
       </div>
       <span className="text-xl font-semibold tracking-tight text-white hidden lg:block">
         UrbanFlow <span className="font-light opacity-60">| AI</span>
@@ -59,3 +59,4 @@ export function Logo() {
     </div>
   );
 }
+
